@@ -1,0 +1,13 @@
+<h3>Version 3.0.0</h3>
+
+<ul>
+  <li>Full rewrite of MIGI in Python+Angular</li>
+  <li>Can now read inside addons and pak01 for fetching files</li>
+  <li>Addons can now have previews and info</li>
+  <li>Now knows if an addon has been updated and requires rebuilding</li>
+  <li>M_ Addons now need to be packed manually instead of regenerating everything</li>
+  <li>New materials patch folder system</li>
+  <li>Multiple author display panel support</li>
+  <li>Is now autoupdated when a new version is available</li>
+  <li>New Hijack menu, control the CSGO instance directly from your desktop</li>
+</ul>
