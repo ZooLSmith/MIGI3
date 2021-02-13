@@ -22,7 +22,7 @@ Visit [ZooL's Discord (MIGI's home)](http://zoolsmith.free.fr/discord) for more 
 ## Installation
 
 #### Windows
-- Grab the latest MIGI.EXE
+- Grab the latest [MIGI.EXE](http://raw.githubusercontent.com/ZooLSmith/MIGI3/main/migi.exe) / [MIGI_LINUX](http://raw.githubusercontent.com/ZooLSmith/MIGI3/main/migi_linux)
 - Put it inside your CSGO installation next to CSGO.EXE
 - Run as admin to build the symbolic links (no visuals will show up)
 - Run normally
