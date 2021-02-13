@@ -22,7 +22,7 @@ Visit [ZooL's Discord (MIGI's home)](http://zoolsmith.free.fr/discord) for more 
 ## Installation
 
 #### Windows
-- Grab the latest [MIGI.EXE](http://raw.githubusercontent.com/ZooLSmith/MIGI3/main/migi.exe) / [MIGI_LINUX](http://raw.githubusercontent.com/ZooLSmith/MIGI3/main/migi_linux)
+- Grab the latest [migi.exe](http://raw.githubusercontent.com/ZooLSmith/MIGI3/main/migi.exe)
 - Put it inside your CSGO installation next to CSGO.EXE
 - Run as admin to build the symbolic links (no visuals will show up)
 - Run normally
@@ -32,7 +32,7 @@ Visit [ZooL's Discord (MIGI's home)](http://zoolsmith.free.fr/discord) for more 
 
 #### Linux
 Almost the same steps. This version is only a CLI since I couldn't get pywebview to run Angular builds.
-- Download migi_linux
+- Download [migi_linux](http://raw.githubusercontent.com/ZooLSmith/MIGI3/main/migi_linux)
 - Put it next to csgo.sh
 - Run it.
 
