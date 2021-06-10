@@ -1,6 +1,6 @@
 # Multiple Items_Game Includer v3
  
-Contains builds and info for the autoupdater. The project is closed source to fight cheating on public servers.
+Contains builds and info for the auto-updater. The project is closed source to fight cheating on public servers.
 
 ![preview](https://raw.githubusercontent.com/ZooLSmith/MIGI3/main/preview.png)
 
@@ -8,7 +8,9 @@ Contains builds and info for the autoupdater. The project is closed source to fi
 
 MIGI3 is a full rewrite of MIGI (C# WPF) in Python+Angular.
 
-MIGI is used to combine CS:GO mod addons together in order to toy with Valve's items_game and various other core game files, but also to give mappers, modders, a more friendly environement when working on CS:GO projects, allowing them to tweak a lot of aspects of the game without interfering with their vanilla install.
+MIGI is used to combine CS:GO mod addons together in order to toy with Valve's items_game and various other core game files, but also to give mappers, modders, a more friendly environment when working on CS:GO projects, allowing them to tweak a lot of aspects of the game without interfering with their vanilla install.
+
+Check the [documentation](http://zoolsmith.free.fr/migi) for the available features and how to use them.
 
 Visit [ZooL's Discord (MIGI's home)](http://zoolsmith.free.fr/discord) for more information, addons download, help on modding with it and more.
 
@@ -16,7 +18,7 @@ Visit [ZooL's Discord (MIGI's home)](http://zoolsmith.free.fr/discord) for more 
 
 - Modding the game for fun, to add or edit weapons, retexture, skins..
 - Testing mods without the hassle of editing pak01, breaking your install or making a mess in your game folder..
-- Easier mapping environement, replacing ugly ERROR models, weapon tools to help mappers in-game..
+- Easier mapping environment, replacing ugly ERROR models, weapon tools to help mappers in-game..
 - Run through [HLAE](https://github.com/advancedfx/advancedfx) for movie making purposes, tweaks on textures, sounds, models, particles...
 
 ## Installation
