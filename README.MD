@@ -33,12 +33,6 @@ Visit [ZooL's Discord (MIGI's home)](http://zoolsmith.free.fr/discord) for more 
 - Generate Pak01 with the tool
 - Run CS:GO through the tool or with "-game migi/csgo"
 
-#### Linux
-Almost the same steps. Linux version is only a CLI for now.
-- Download [migi_linux](http://raw.githubusercontent.com/ZooLSmith/MIGI3/main/migi_linux)
-- Put it next to csgo.sh
-- Run it.
-
 ## Modules in this project
 
 | Python | Web |
