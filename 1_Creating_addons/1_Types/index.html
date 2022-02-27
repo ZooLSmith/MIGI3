@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="ZooL Smith">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  
+<!-- MIGI -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ZooL_Smith">
+	<meta name="twitter:creator" content="@ZooL_Smith">
+	<meta name="twitter:title" content="Multiple Items_Game Includer">
+	<meta name="twitter:description" content="MIGI is a tool used to combine CS:GO mod addons together in order to toy with Valve's items_game and various other core game files, but also to give mappers, modders, fragmovie makers, a more friendly environement when working on CS:GO projects, allowing them to tweak a lot of aspects of the game without ever interfering with their vanilla install.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/ZooLSmith/MIGI3/main/preview.png">
+<!-- END -->
+  <title>What type of addon? - MIGI</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/valve.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/code.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "What type of addon?";
+    var mkdocs_page_input_path = "1_Creating_addons/1_Types.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+	
+      <div class="wy-side-nav-search">
+			<a href="../.." class="icon icon-home"><img src="/migi/img/placeholder.png"></a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+		<ul class="current">
+			
+			
+				<li class="toctree-l1">
+					
+    <a class="" href="../..">+ Home</a>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">Using MIGI</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../0_Using_MIGI/0_Installation/">+ Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0_Using_MIGI/1_Installing_addons/">+ Installing Addons</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0_Using_MIGI/2_Troubleshooting/">+ Troubleshooting</a>
+                </li>
+    </ul>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">Creating addons</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">What type of addon?</a>
+    <ul class="subnav">
+            
+<!--
+    <li class="toctree-l3"><a href="#what-type-of-addon">What type of addon?</a></li>
+-->
+    
+        <ul>
+        
+            <li><a class="subsection toctree-l4" href="#introduction"><!--|--><span class="subsection">Introduction</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#m_-vpks"><!--|--><span class="subsection">M_ VPKs</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#p_-folders"><!--|--><span class="subsection">P_ Folders</span></a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../2_Addon_wizard/">+ Addon wizard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../3_Notes/">+ Notes</a>
+                </li>
+    </ul>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">More features</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/1_VScripts/">+ VScripts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/2_Patch_folder/">+ Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/3_Hijack/">+ Hijack</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/4_Themes/">+ Themes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/5_Launch_options/">+ Launch options</a>
+                </li>
+    </ul>
+				</li>
+			
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../.."><img src="/migi/img/placeholder.png"/></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Manual</a> &raquo;</li>
+    
+      
+        
+          <li>Creating addons &raquo;</li>
+        
+      
+    
+    <li>What type of addon?</li>
+	
+	<!--
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/ZooLSmith/MIGI3/edit/master/docs/1_Creating_addons/1_Types.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+	-->
+	
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="what-type-of-addon">What type of addon?</h1>
+<h2 id="introduction">Introduction</h2>
+<p>As said previously, MIGI uses specific addon formats, either with the prefix <code>p_</code> or <code>m_</code></p>
+<p>Depending on your goal, you'll have to choose which you need, the next sections will allow you to make that choice.</p>
+<h2 id="m_-vpks"><strong>M</strong>_ VPKs</h2>
+<p><strong>M</strong>_ VPKs are what you should use most of the time if you plan to modify a weapon to be used offline or in lobbies.<br />
+<strong>M_</strong> Folders are what you'd consider "src files", those are what you only should keep and never share.  </p>
+<p>Once ready to test your addon, you need to click the <img alt="build" src="../../img/build_m.jpg" /> button on the left to make it usable inside MIGI.
+If that button turns yellow it means your addon is outdated and needs to be rebuilt, if it's green it means it's up-to-date.</p>
+<p>Use cases:</p>
+<ul>
+<li>Config based weapon / econ items replacements</li>
+<li>Sound and particle replacements</li>
+</ul>
+<h2 id="p_-folders"><strong>P</strong>_ Folders</h2>
+<p>It is impossible to replace an existing asset unless overwritten inside a new <strong>Pak</strong>.
+MIGI supports doing so using those <strong>P</strong>_ folders, which gets its files added to the new additive <strong>Pak</strong>01 when building.  </p>
+<p>Use cases:</p>
+<ul>
+<li>Hardcoded model replacements</li>
+<li>Map Reskins</li>
+<li>Demo / sv_pure 0 oriented replacements</li>
+<li>Whatever <strong>M</strong>_ VPKs can already do</li>
+</ul>
+<h4 id="note">Note:</h4>
+<p>While <strong>P</strong>_ folders can seem simply better, they however take longer to build. The more data <strong>P</strong>_ folders will have, 
+the longer it'll take MIGI and VPK.EXE to move those files then compress them in that new <strong>Pak</strong>01. Only use them if you're certain that you cannot use a <strong>M</strong>_ VPK instead.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../2_Addon_wizard/" class="btn btn-neutral btn-right float-right" title="Addon wizard">Addon wizard <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../0_Using_MIGI/2_Troubleshooting/" class="btn btn-neutral btn-left" title="Troubleshooting"><span class="icon icon-circle-arrow-left"></span> Troubleshooting</a>
+      
+    </div>
+  
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+<div style="opacity: 70%; font-size: 12px; margin: 0px; margin-top: 4px; margin-bottom: -20px; text-align: center;">
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a modified <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</div>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ZooLSmith/MIGI3/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../0_Using_MIGI/2_Troubleshooting/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../2_Addon_wizard/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+-->
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="ZooL Smith">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  
+<!-- MIGI -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ZooL_Smith">
+	<meta name="twitter:creator" content="@ZooL_Smith">
+	<meta name="twitter:title" content="Multiple Items_Game Includer">
+	<meta name="twitter:description" content="MIGI is a tool used to combine CS:GO mod addons together in order to toy with Valve's items_game and various other core game files, but also to give mappers, modders, fragmovie makers, a more friendly environement when working on CS:GO projects, allowing them to tweak a lot of aspects of the game without ever interfering with their vanilla install.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/ZooLSmith/MIGI3/main/preview.png">
+<!-- END -->
+  <title>VScripts - MIGI</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/valve.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/code.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "VScripts";
+    var mkdocs_page_input_path = "2_More_features/1_VScripts.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+	
+      <div class="wy-side-nav-search">
+			<a href="../.." class="icon icon-home"><img src="/migi/img/placeholder.png"></a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+		<ul class="current">
+			
+			
+				<li class="toctree-l1">
+					
+    <a class="" href="../..">+ Home</a>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">Using MIGI</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../0_Using_MIGI/0_Installation/">+ Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0_Using_MIGI/1_Installing_addons/">+ Installing Addons</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0_Using_MIGI/2_Troubleshooting/">+ Troubleshooting</a>
+                </li>
+    </ul>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">Creating addons</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../1_Creating_addons/1_Types/">+ What type of addon?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../1_Creating_addons/2_Addon_wizard/">+ Addon wizard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../1_Creating_addons/3_Notes/">+ Notes</a>
+                </li>
+    </ul>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">More features</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">VScripts</a>
+    <ul class="subnav">
+            
+<!--
+    <li class="toctree-l3"><a href="#vscripts">VScripts</a></li>
+-->
+    
+        <ul>
+        
+            <li><a class="subsection toctree-l4" href="#utility-variables"><!--|--><span class="subsection">Utility Variables</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#utility-functions"><!--|--><span class="subsection">Utility Functions</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#example"><!--|--><span class="subsection">Example</span></a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../2_Patch_folder/">+ Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../3_Hijack/">+ Hijack</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../4_Themes/">+ Themes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../5_Launch_options/">+ Launch options</a>
+                </li>
+    </ul>
+				</li>
+			
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../.."><img src="/migi/img/placeholder.png"/></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Manual</a> &raquo;</li>
+    
+      
+        
+          <li>More features &raquo;</li>
+        
+      
+    
+    <li>VScripts</li>
+	
+	<!--
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/ZooLSmith/MIGI3/edit/master/docs/2_More_features/1_VScripts.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+	-->
+	
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="vscripts">VScripts</h1>
+<p>VScripts can be used in MIGI on hosts to tweak entities. The current implementation offers an entity for your script that never gets reset by rounds.</p>
+<p>If you need to edit your script while playing, you'll need to restart the map (not the round) by using <code>changelevel mapname</code>, otherwise you'll need to setup your code to be reloadable with a function or something.</p>
+<p>The main script has to be named <code>main.nut</code> and be placed in <code>scripts/vscripts/yourfoldername/</code>, <code>yourfoldername</code> being your MIGI addon's folder name without its (p_/m_) prefix.</p>
+<p>See <a href="https://developer.valvesoftware.com/wiki/VScript">https://developer.valvesoftware.com/wiki/VScript</a> for more information about VScripts.</p>
+<h2 id="utility-variables">Utility Variables</h2>
+<h5 id="migi_addons">migi_addons</h5>
+<blockquote>
+<p>List of all the addons names as strings with their prefix (eg. "p_ak_gold")</p>
+</blockquote>
+<h5 id="migi_weapons">migi_weapons</h5>
+<blockquote>
+<p>List of all the weapons currently in-game (MIGI and CS:GO). The structure of each item is identical to <code>items_game.txt</code>. All values are strings, but you can always parse them with tointeger() tofloat() etc...</p>
+<p>A few changes have been made to accommodate VScripts:</p>
+<ul>
+<li>Spaces becomes underscores: <code>in game price</code> -&gt; <code>in_game_price</code></li>
+<li>Keys starting with numbers have an underscore prefix (mostly stickers): <code>0</code> -&gt; <code>_0</code></li>
+</ul>
+<p>Also includes additional keys for easier use:</p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Identifier of the item (previously the key of the item's table in items_game.txt)</td>
+</tr>
+<tr>
+<td>team</td>
+<td>Simplified <code>used_by_classes</code> that outputs the team the weapon is supposed to be for</td>
+</tr>
+<tr>
+<td>migi_addon</td>
+<td>Name of the addon this item comes from (including m/p prefix), will be "null" (string) if not from an addon</td>
+</tr>
+<tr>
+<td>translated_name</td>
+<td>English translated name of the item (if using translation strings)</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<h2 id="utility-functions">Utility Functions</h2>
+<table>
+<thead>
+<tr>
+<th>Signature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>void OnNewRound()</td>
+<td>Function executed automatically when a new round is detected</td>
+</tr>
+<tr>
+<td>table migi_getWeaponDataByKV( string key, string value )</td>
+<td>Find a weapon from items_games by keyvalue</td>
+</tr>
+<tr>
+<td>string migi_getValueFromWeaponData( table weapon, string dict, string key )</td>
+<td>Returns the value of the specified key in the dict. If dict is null, the root table will be searched</td>
+</tr>
+<tr>
+<td>table[] migi_getWeaponsByAddon( string addon_name )</td>
+<td>Returns the list of weapon items from an addon</td>
+</tr>
+</tbody>
+</table>
+<p><code>migi_getWeaponDataByKV</code> and <code>migi_getValueFromWeaponData</code> will both return <code>null</code> if the key or table containing the key couldn't be found.</p>
+<h2 id="example">Example</h2>
+<p>This script demonstrates every feature above, it prints to the host's console the weapons of each player on new rounds, but also the available addons. </p>
+<p>To demonstrate that the entity containing this script is kept between rounds, the <code>round_number</code> variable here is incremented and printed each round.</p>
+<pre><code class="csharp">round_number &lt;- 0;
+
+function OnNewRound()
+{
+    round_number++;
+    printl(&quot;&gt;&gt; NEW ROUND! current: &quot; + round_number);
+
+    printl(&quot;\nCurrent Addons:&quot;);
+
+    foreach( addon in migi_addons )
+        printl(&quot;\t&quot;+addon);
+
+    printl(&quot;\nWeapons in the players' backpack:&quot;)
+
+    local w = null;
+    while(w = Entities.FindByClassname(w, &quot;weapon_*&quot;))
+    {
+        // weapons use viewmodels when on players
+        local wpnData = migi_getWeaponDataByKV(&quot;model_player&quot;, w.GetModelName());
+
+        // couldn't find the weapon data related to the model_player
+        if(!wpnData)
+            continue;
+
+        // get values from the weapon data
+        // you can't be certain the item will have the specified key, this function circumvents it for you.
+        local name = migi_getValueFromWeaponData(wpnData, &quot;&quot;, &quot;translated_name&quot;);
+        local type = migi_getValueFromWeaponData(wpnData, &quot;visuals&quot;, &quot;weapon_type&quot;);
+
+        local addon = (wpnData.migi_addon == &quot;null&quot; ? &quot;&quot; : &quot;  (&quot;+wpnData.migi_addon+&quot;)&quot; );
+
+        // again, it could be the knife, which has no price, the function will return null if not found
+        local price = migi_getValueFromWeaponData(wpnData, &quot;attributes&quot;, &quot;in_game_price&quot;);
+        price = price == null ? &quot;&quot; : &quot;  $&quot;+price;
+
+        // concat and print them
+        printl(&quot;\t- &quot;+w.GetOwner()+&quot;\t: &quot;+type+&quot; | &quot;+name+price+addon);
+    }
+}
+
+for(local i = 0; i&lt;15; i++)
+    printl(&quot;&gt;&gt; This print is only called when the map spawns!&quot;);
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../2_Patch_folder/" class="btn btn-neutral btn-right float-right" title="Patch">Patch <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../1_Creating_addons/3_Notes/" class="btn btn-neutral btn-left" title="Notes"><span class="icon icon-circle-arrow-left"></span> Notes</a>
+      
+    </div>
+  
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+<div style="opacity: 70%; font-size: 12px; margin: 0px; margin-top: 4px; margin-bottom: -20px; text-align: center;">
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a modified <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</div>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ZooLSmith/MIGI3/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../../1_Creating_addons/3_Notes/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../2_Patch_folder/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+-->
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

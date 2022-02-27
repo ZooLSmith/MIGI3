@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="ZooL Smith">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  
+<!-- MIGI -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ZooL_Smith">
+	<meta name="twitter:creator" content="@ZooL_Smith">
+	<meta name="twitter:title" content="Multiple Items_Game Includer">
+	<meta name="twitter:description" content="MIGI is a tool used to combine CS:GO mod addons together in order to toy with Valve's items_game and various other core game files, but also to give mappers, modders, fragmovie makers, a more friendly environement when working on CS:GO projects, allowing them to tweak a lot of aspects of the game without ever interfering with their vanilla install.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/ZooLSmith/MIGI3/main/preview.png">
+<!-- END -->
+  <title>Troubleshooting - MIGI</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/valve.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/code.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Troubleshooting";
+    var mkdocs_page_input_path = "0_Using_MIGI/2_Troubleshooting.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+	
+      <div class="wy-side-nav-search">
+			<a href="../.." class="icon icon-home"><img src="/migi/img/placeholder.png"></a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+		<ul class="current">
+			
+			
+				<li class="toctree-l1">
+					
+    <a class="" href="../..">+ Home</a>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">Using MIGI</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../0_Installation/">+ Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../1_Installing_addons/">+ Installing Addons</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Troubleshooting</a>
+    <ul class="subnav">
+            
+<!--
+    <li class="toctree-l3"><a href="#troubleshooting">Troubleshooting</a></li>
+-->
+    
+        <ul>
+        
+            <li><a class="subsection toctree-l4" href="#i-was-using-the-old-migi-tool-should-i-do-something-before-using-migi-3"><!--|--><span class="subsection">I was using the old MIGI tool, should I do something before using MIGI 3?</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#migi-doesnt-open-nothing-happens"><!--|--><span class="subsection">MIGI doesn't open, nothing happens</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#im-getting-an-assertion-failed-message-when-csgo-launches"><!--|--><span class="subsection">I'm getting an "Assertion Failed" message when CS:GO launches</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#migi-says-i-cant-launch-as-admin-but-im-not-launching-as-admin"><!--|--><span class="subsection">MIGI says I can't launch as admin but I'm not launching as admin</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#im-getting-another-issue-that-isnt-listed-here"><!--|--><span class="subsection">I'm getting another issue that isn't listed here</span></a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">Creating addons</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../1_Creating_addons/1_Types/">+ What type of addon?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../1_Creating_addons/2_Addon_wizard/">+ Addon wizard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../1_Creating_addons/3_Notes/">+ Notes</a>
+                </li>
+    </ul>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">More features</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/1_VScripts/">+ VScripts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/2_Patch_folder/">+ Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/3_Hijack/">+ Hijack</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/4_Themes/">+ Themes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/5_Launch_options/">+ Launch options</a>
+                </li>
+    </ul>
+				</li>
+			
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../.."><img src="/migi/img/placeholder.png"/></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Manual</a> &raquo;</li>
+    
+      
+        
+          <li>Using MIGI &raquo;</li>
+        
+      
+    
+    <li>Troubleshooting</li>
+	
+	<!--
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/ZooLSmith/MIGI3/edit/master/docs/0_Using_MIGI/2_Troubleshooting.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+	-->
+	
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="troubleshooting">Troubleshooting</h1>
+<h3 id="i-was-using-the-old-migi-tool-should-i-do-something-before-using-migi-3">I was using the old MIGI tool, should I do something before using MIGI 3?</h3>
+<p>Backup your addons and delete the whole MIGI folder just in case, then launch MIGI 3 to rebuild the whole structure</p>
+<h3 id="migi-doesnt-open-nothing-happens">MIGI doesn't open, nothing happens</h3>
+<p>Try updating <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/">EdgeWebView</a> <em>(standalone x64)</em></p>
+<h3 id="im-getting-an-assertion-failed-message-when-csgo-launches">I'm getting an "Assertion Failed" message when CS:GO launches</h3>
+<p>If the message is about <code>econ_item_system.cpp</code> then it's an issue about the <code>items_game</code> given by an addon.<br />
+Either the addon is corrupted, conflicting with another, or simply wasn't made for MIGI.</p>
+<h3 id="migi-says-i-cant-launch-as-admin-but-im-not-launching-as-admin">MIGI says I can't launch as admin but I'm not launching as admin</h3>
+<p>You've likely made your windows always open programs as admin.
+Reverting that is complicated as there's a lot of different ways to do it.</p>
+<h3 id="im-getting-another-issue-that-isnt-listed-here">I'm getting another issue that isn't listed here</h3>
+<p>Join <a href="http://zoolsmith.free.fr/discord">ZooL's Discord</a>, ask your questions / issues in <strong><code>#help-migi</code></strong></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../1_Creating_addons/1_Types/" class="btn btn-neutral btn-right float-right" title="What type of addon?">What type of addon? <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../1_Installing_addons/" class="btn btn-neutral btn-left" title="Installing Addons"><span class="icon icon-circle-arrow-left"></span> Installing Addons</a>
+      
+    </div>
+  
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+<div style="opacity: 70%; font-size: 12px; margin: 0px; margin-top: 4px; margin-bottom: -20px; text-align: center;">
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a modified <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</div>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ZooLSmith/MIGI3/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../1_Installing_addons/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../1_Creating_addons/1_Types/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+-->
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

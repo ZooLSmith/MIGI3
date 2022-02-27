@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="ZooL Smith">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  
+<!-- MIGI -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ZooL_Smith">
+	<meta name="twitter:creator" content="@ZooL_Smith">
+	<meta name="twitter:title" content="Multiple Items_Game Includer">
+	<meta name="twitter:description" content="MIGI is a tool used to combine CS:GO mod addons together in order to toy with Valve's items_game and various other core game files, but also to give mappers, modders, fragmovie makers, a more friendly environement when working on CS:GO projects, allowing them to tweak a lot of aspects of the game without ever interfering with their vanilla install.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/ZooLSmith/MIGI3/main/preview.png">
+<!-- END -->
+  <title>Addon wizard - MIGI</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/valve.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/code.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Addon wizard";
+    var mkdocs_page_input_path = "1_Creating_addons/2_Addon_wizard.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+	
+      <div class="wy-side-nav-search">
+			<a href="../.." class="icon icon-home"><img src="/migi/img/placeholder.png"></a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+		<ul class="current">
+			
+			
+				<li class="toctree-l1">
+					
+    <a class="" href="../..">+ Home</a>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">Using MIGI</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../0_Using_MIGI/0_Installation/">+ Installation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0_Using_MIGI/1_Installing_addons/">+ Installing Addons</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../0_Using_MIGI/2_Troubleshooting/">+ Troubleshooting</a>
+                </li>
+    </ul>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">Creating addons</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../1_Types/">+ What type of addon?</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Addon wizard</a>
+    <ul class="subnav">
+            
+<!--
+    <li class="toctree-l3"><a href="#addon-wizard">Addon wizard</a></li>
+-->
+    
+        <ul>
+        
+            <li><a class="subsection toctree-l4" href="#fields"><!--|--><span class="subsection">Fields</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#addon-info"><!--|--><span class="subsection">Addon Info</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#addon-preview"><!--|--><span class="subsection">Addon Preview</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#item-example"><!--|--><span class="subsection">Item Example</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#sounds-definitions"><!--|--><span class="subsection">Sounds Definitions</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#inventory-angles"><!--|--><span class="subsection">Inventory Angles</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#playermodel-talker"><!--|--><span class="subsection">Playermodel Talker</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#particles-example"><!--|--><span class="subsection">Particles Example</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#vscripts-example"><!--|--><span class="subsection">VScripts Example</span></a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../3_Notes/">+ Notes</a>
+                </li>
+    </ul>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">More features</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/1_VScripts/">+ VScripts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/2_Patch_folder/">+ Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/3_Hijack/">+ Hijack</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/4_Themes/">+ Themes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/5_Launch_options/">+ Launch options</a>
+                </li>
+    </ul>
+				</li>
+			
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../.."><img src="/migi/img/placeholder.png"/></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Manual</a> &raquo;</li>
+    
+      
+        
+          <li>Creating addons &raquo;</li>
+        
+      
+    
+    <li>Addon wizard</li>
+	
+	<!--
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/ZooLSmith/MIGI3/edit/master/docs/1_Creating_addons/2_Addon_wizard.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+	-->
+	
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="addon-wizard">Addon wizard</h1>
+<p>Once you've found what kind of addon you wish to make, click the <img alt="Create Addon" src="../../img/createaddon.jpg" /> button.</p>
+<h2 id="fields">Fields</h2>
+<p>In the Create Addon window you'll be able to name your addon accordingly to your previous choice and choose to generate template files to get started.
+<div style="text-align:center"><img alt="P Folder Example" src="../../img/createaddonwindow.jpg" /></div></p>
+<p>Inside the Folder field you should enter your prefixed addon name: either <code>m_something</code> or <code>p_something</code></p>
+<h2 id="addon-info">Addon Info</h2>
+<p>Located at the folder's root</p>
+<p>Addon Info will generate a template <code>addon.json</code> file that describes your addon to users. 
+This file in <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> format will need to be filled and already has the needed fields.</p>
+<p>All fields can be omitted, if you don't have any collaborators, you can remove the <code>authors</code> list. The pre-filled values of each field should be pretty much self-explanatory.</p>
+<pre><code>{
+        &quot;name&quot;:     &quot;[GENERATED JSON] for ##ADDON_NAME##&quot;,
+        &quot;author&quot;:    &quot;Author Name&quot;,
+        &quot;social&quot;:     &quot;An URL to one of your social network profiles&quot;,
+        &quot;authors&quot;:
+        [
+                {
+                        &quot;name&quot;:    &quot;Author with link and role&quot;, 
+                        &quot;social&quot;:    &quot;https://www.youtube.com/user/Valve&quot;, 
+                        &quot;role&quot;:      &quot;What they did go there&quot;
+                },
+                {
+                        &quot;name&quot;:    &quot;Author name with no info&quot;
+                }
+        ],
+        &quot;replacement&quot;:    &quot;What it replaces&quot;
+}
+
+</code></pre>
+
+<h2 id="addon-preview">Addon Preview</h2>
+<p>Located at the folder's root</p>
+<p>Addon Preview will copy a .PNG image to your addon folder, this image must always be named <code>preview.png</code> or <code>preview.jpg</code> and will appear on the left side of your addon's entry inside MIGI</p>
+<p>The recommended size is 100x50:
+<div class="inline-frame"><img alt="P Folder Example" src="../../img/placeholder.png" /></div></p>
+<h2 id="item-example">Item Example</h2>
+<p>Located in <code>scripts/items/</code></p>
+<p>Item Example will generate an <code>items_game.txt</code> with a example modded deagle and a brand new weapon on ID number <code>9201</code> for you.<br />
+An <code>items_game.txt</code> edit inside a MIGI addon must always be named <code>items_game_yourfoldername.txt</code> without the addon type prefix.  </p>
+<p>MIGI will later include that file by name inside a new <code>items_game.txt</code> automatically when building. Changes are additive.  </p>
+<p>In this example, the Desert Eagle (id 1) will have its magazine bullets increased to 10, benefit from 50 bullets in reserve, have its recoil reduced and its firing sound changed to the SSG08's</p>
+<pre><code class="js">&quot;items_game&quot;
+{
+        &quot;items&quot;
+        {
+                &quot;1&quot;
+                {
+                        &quot;item_name&quot;                 &quot;Modded Deagle&quot;                        
+                        &quot;model_player&quot;                &quot;models/weapons/v_pist_revolver.mdl&quot;
+                        &quot;attributes&quot;
+                        {
+                                &quot;primary clip size&quot;                        &quot;10&quot;
+                                &quot;primary reserve ammo max&quot;        &quot;50&quot;
+                                &quot;recoil magnitude&quot;                        &quot;30&quot;
+                        }
+                        &quot;visuals&quot;
+                        {
+                                &quot;sound_single_shot&quot;                &quot;Weapon_SSG08.Single&quot;
+                        }
+                }
+        }
+}
+</code></pre>
+
+<h2 id="sounds-definitions">Sounds Definitions</h2>
+<p>Located in <code>scripts/</code></p>
+<p>A game_sounds config file will be allocated for your addon, it'll be included inside the <code>game_sounds_manifest.txt</code> on build.<br />
+In a similar fashion to <code>items_game.txt</code>, you should name it <code>game_sounds_yourfoldername.txt</code> without the addon type prefix.</p>
+<p>See <a href="https://developer.valvesoftware.com/wiki/Soundscripts">https://developer.valvesoftware.com/wiki/Soundscripts</a> for more information.</p>
+<p>This option will generate an example weapon firing sound entry for you:</p>
+<pre><code class="js">&quot;Weapon_Mozambique.Single&quot;
+{
+        &quot;channel&quot;                &quot;CHAN_STATIC&quot;
+        &quot;volume&quot;                &quot;1.0&quot;
+        &quot;pitch&quot;                    &quot;160,180&quot;
+        &quot;soundlevel&quot;            &quot;SNDLVL_79dB&quot;
+        &quot;wave&quot;                    &quot;`)weapons/sawedoff/sawedoff-1.wav&quot;
+}
+</code></pre>
+
+<h2 id="inventory-angles">Inventory Angles</h2>
+<p>Located in <code>resource/ui/econ/</code></p>
+<p>Yet another config file, here this one controls how your model displays in the buymenu and inventory.<br />
+Not much is known about how this file works. This file should be named <code>itemmodelpanel_yourfoldername.txt</code> without the addon type prefix.</p>
+<pre><code class="js">&quot;Resource/UI/Econ/ItemModelPanelCharWeaponInspect.res&quot;
+{
+        &quot;mozambique&quot;        // unique name for the entry, the name itself doesn't matter.
+        {
+                &quot;rule&quot;
+                {
+                        &quot;model&quot; &quot;v_pist_mozambique&quot;                // What viewmodel it replaces, seems to be based on substrings.
+                }
+
+                &quot;config&quot;                // Where the camera is placed and how it rotates.
+                {
+                        &quot;camera_offset&quot;   &quot;44.57 18.35 -5.47&quot;
+                        &quot;camera_orient&quot;   &quot;1.30 -135.29 0.00&quot;
+                        &quot;orbit_pivot&quot;     &quot;20.88 -5.10 -6.23&quot;
+                        &quot;item_rotate&quot;          &quot;y[-360 360] x[ 0 0 ]&quot;
+                }
+        }
+}
+</code></pre>
+
+<h2 id="playermodel-talker">Playermodel Talker</h2>
+<p>Located in <code>scripts/talker/</code></p>
+<p>This file controls how a playermodel should talk based on a Rule and Response system.<br />
+It should be named <code>yourfoldername.txt</code> without the addon type prefix.</p>
+<p>See <a href="https://developer.valvesoftware.com/wiki/Response_System">https://developer.valvesoftware.com/wiki/Response_System</a> for more information.</p>
+<pre><code>Response Radio.FireInTheHoleCUSTOM
+{
+    scene &quot;scenes/pirate/Blinded01.vcd&quot;  //I am blind
+    scene &quot;scenes/pirate/Blinded02.vcd&quot;  //Blinded!
+    scene &quot;scenes/pirate/Blinded04.vcd&quot;  //I can't see
+    scene &quot;scenes/pirate/Blinded05.vcd&quot;  //Blind
+    scene &quot;scenes/pirate/Blinded06.vcd&quot;  //Cannot see
+}
+Rule Radio.FireInTheHoleCUSTOM
+{
+    criteria TLK_Radio.FireInTheHole Isprofessional_CUSTOM IsTalkprofessional_epic
+    ApplyContext &quot;Talkcustom:1:1&quot;
+    applycontexttoworld
+    Response Radio.FireInTheHoleCUSTOM
+}
+</code></pre>
+
+<h2 id="particles-example">Particles Example</h2>
+<p>Located in <code>particles/</code></p>
+<p>Particles Example will generate simple muzzleflash and bullet particle as an example on how to add .PCF particles to your addon.<br />
+.PCF files can be modified and created with <a href="https://store.steampowered.com/app/630/Alien_Swarm/">Alien Swarm</a> using the <code>-nop4 -tools</code> launch options. 
+It should be named <code>yourfoldername.pcf</code> without the addon type prefix.</p>
+<p>Note that particles must have its materials and the file itself in the built VPK in order to properly load.</p>
+<p>See <a href="https://developer.valvesoftware.com/wiki/Particle_Editor">https://developer.valvesoftware.com/wiki/Particle_Editor</a> for more information.</p>
+<h2 id="vscripts-example">VScripts Example</h2>
+<p>Located in <code>scripts/vscripts/yourfoldername/</code></p>
+<p>The main file should always be named <code>main.nut</code><br />
+You can of course include more files using <code>IncludeScript(filename, scope)</code></p>
+<p>Check <a href="../../2_More_features/1_VScripts">this section</a> for the current implementations</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../3_Notes/" class="btn btn-neutral btn-right float-right" title="Notes">Notes <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../1_Types/" class="btn btn-neutral btn-left" title="What type of addon?"><span class="icon icon-circle-arrow-left"></span> What type of addon?</a>
+      
+    </div>
+  
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+<div style="opacity: 70%; font-size: 12px; margin: 0px; margin-top: 4px; margin-bottom: -20px; text-align: center;">
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a modified <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</div>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ZooLSmith/MIGI3/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../1_Types/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../3_Notes/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+-->
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

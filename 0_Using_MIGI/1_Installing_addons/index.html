@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="ZooL Smith">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  
+<!-- MIGI -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@ZooL_Smith">
+	<meta name="twitter:creator" content="@ZooL_Smith">
+	<meta name="twitter:title" content="Multiple Items_Game Includer">
+	<meta name="twitter:description" content="MIGI is a tool used to combine CS:GO mod addons together in order to toy with Valve's items_game and various other core game files, but also to give mappers, modders, fragmovie makers, a more friendly environement when working on CS:GO projects, allowing them to tweak a lot of aspects of the game without ever interfering with their vanilla install.">
+	<meta name="twitter:image" content="https://raw.githubusercontent.com/ZooLSmith/MIGI3/main/preview.png">
+<!-- END -->
+  <title>Installing Addons - MIGI</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/valve.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/code.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Installing Addons";
+    var mkdocs_page_input_path = "0_Using_MIGI/1_Installing_addons.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+	
+      <div class="wy-side-nav-search">
+			<a href="../.." class="icon icon-home"><img src="/migi/img/placeholder.png"></a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+		<ul class="current">
+			
+			
+				<li class="toctree-l1">
+					
+    <a class="" href="../..">+ Home</a>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">Using MIGI</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../0_Installation/">+ Installation</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Installing Addons</a>
+    <ul class="subnav">
+            
+<!--
+    <li class="toctree-l3"><a href="#installing-addons">Installing Addons</a></li>
+-->
+    
+        <ul>
+        
+            <li><a class="subsection toctree-l4" href="#introduction"><!--|--><span class="subsection">Introduction</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#m_-migi-vpks"><!--|--><span class="subsection">M_ (MIGI) VPKs</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#p_-pak-folders"><!--|--><span class="subsection">P_ (PAK) Folders</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#other-kinds-of-folders"><!--|--><span class="subsection">Other kinds of folders</span></a></li>
+        
+            <li><a class="subsection toctree-l4" href="#building-and-launching"><!--|--><span class="subsection">Building and launching</span></a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../2_Troubleshooting/">+ Troubleshooting</a>
+                </li>
+    </ul>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">Creating addons</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../1_Creating_addons/1_Types/">+ What type of addon?</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../1_Creating_addons/2_Addon_wizard/">+ Addon wizard</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../1_Creating_addons/3_Notes/">+ Notes</a>
+                </li>
+    </ul>
+				</li>
+			
+				<li class="toctree-l1">
+					
+    <span class="caption-text">More features</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/1_VScripts/">+ VScripts</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/2_Patch_folder/">+ Patch</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/3_Hijack/">+ Hijack</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/4_Themes/">+ Themes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../2_More_features/5_Launch_options/">+ Launch options</a>
+                </li>
+    </ul>
+				</li>
+			
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../.."><img src="/migi/img/placeholder.png"/></a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Manual</a> &raquo;</li>
+    
+      
+        
+          <li>Using MIGI &raquo;</li>
+        
+      
+    
+    <li>Installing Addons</li>
+	
+	<!--
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/ZooLSmith/MIGI3/edit/master/docs/0_Using_MIGI/1_Installing_addons.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+	-->
+	
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="installing-addons">Installing Addons</h1>
+<h2 id="introduction">Introduction</h2>
+<p>MIGI uses specific addon formats, either starting with the prefix <code>m_</code> or <code>p_</code><br />
+Addons are to be placed inside <code>Counter-Strike Global Offensive/migi/csgo/addons/</code>  </p>
+<p>Click <img alt="Open Folder" src="../../img/openfolder.jpg" /> inside MIGI to access it directly.</p>
+<h4 id="rules">Rules:</h4>
+<ul>
+<li>As a mod user you should never rename downloaded addons.</li>
+<li>Some addons are made to be used offline or with people that have the same addons, those won't work online or in demos.</li>
+<li>Other addons are made for playing on sv_pure 0 servers or used in demos, those are limited but more compatible.</li>
+<li>Addons can't override the same weapon / item, if they do, either the game will crash or won't behave as intended.</li>
+</ul>
+<h2 id="m_-migi-vpks"><strong>M</strong>_ (MIGI) VPKs</h2>
+<p><strong>M</strong>_ VPKs are standard MIGI addons, they have config files that get appended while generating the pak.<br />
+Those can only be used offline or in lobbies if you're the host / have the same addon as the host.<br />
+They usually replace game items like weapons, sounds, particles, and more. They're the fastest kind of addons.</p>
+<h2 id="p_-pak-folders"><strong>P</strong>_ (PAK) Folders</h2>
+<p><strong>P_</strong> folders are addons overwriting files from the main <strong>P</strong>ak01 VPK. Depending on how the <strong>P</strong>_ addon is made, it should be compatible with demos and sv_pure 0 servers.</p>
+<p>Make sure to unzip those folders if they're compressed and that the <strong>P</strong>_ folder you're putting 
+inside <code>Counter-Strike Global Offensive/migi/csgo/addons/</code> contains the models/materials/other folders, otherwise they won't load.</p>
+<p>This is what you should have for instance:
+<div style="text-align:center"><img alt="P Folder Example" src="../../img/pfolder.png" /></div></p>
+<h2 id="other-kinds-of-folders">Other kinds of folders</h2>
+<p>If an addon is neither a <strong>M</strong>_ or <strong>P</strong>_ addon, then they weren't made for MIGI and shouldn't be used, unless you know what you're doing.
+Those need to be converted and stripped from any full config replacements they could have if they're shipped with sounds or particles.</p>
+<h2 id="building-and-launching">Building and launching</h2>
+<p>Once you're done installing addons, click the <img alt="Build" src="../../img/build.jpg" /> button at the center, then <img alt="Launch MIGI" src="../../img/launch.jpg" /> 
+or add <code>-game migi/csgo</code> to your launch options (for tools like <a href="https://www.advancedfx.org/download/">HLAE</a>)</p>
+<p>Keep in mind that each time you add or remove an addon, you'll need to build.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../2_Troubleshooting/" class="btn btn-neutral btn-right float-right" title="Troubleshooting">Troubleshooting <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../0_Installation/" class="btn btn-neutral btn-left" title="Installation"><span class="icon icon-circle-arrow-left"></span> Installation</a>
+      
+    </div>
+  
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+<div style="opacity: 70%; font-size: 12px; margin: 0px; margin-top: 4px; margin-bottom: -20px; text-align: center;">
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a modified <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</div>
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<!--
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/ZooLSmith/MIGI3/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../0_Installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../2_Troubleshooting/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+-->
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
