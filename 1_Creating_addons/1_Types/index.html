@@ -187,31 +187,27 @@
               
                 <h1 id="what-type-of-addon">What type of addon?</h1>
 <h2 id="introduction">Introduction</h2>
-<p>As said previously, MIGI uses specific addon formats, either with the prefix <code>p_</code> or <code>m_</code></p>
-<p>Depending on your goal, you'll have to choose which you need, the next sections will allow you to make that choice.</p>
+<p>As said in previous sections, MIGI uses two specific addon formats, either with the prefix <code>p_</code> or <code>m_</code></p>
 <h2 id="m_-vpks"><strong>M</strong>_ VPKs</h2>
-<p><strong>M</strong>_ VPKs are what you should use most of the time if you plan to modify a weapon to be used offline or in lobbies.<br />
-<strong>M_</strong> Folders are what you'd consider "src files", those are what you only should keep and never share.  </p>
+<h4 id="recommended"><em>Recommended</em></h4>
+<p><br/>
+<strong>M</strong>_ VPKs are what you should use most of the time, they're easier to share around as well.<br />
+<strong>M_</strong> Folders are "src files", this is what we use to generate the <strong>vpk</strong> file which is then used by the game.</p>
 <p>Once ready to test your addon, you need to click the <img alt="build" src="../../img/build_m.jpg" /> button on the left to make it usable inside MIGI.
-If that button turns yellow it means your addon is outdated and needs to be rebuilt, if it's green it means it's up-to-date.</p>
-<p>Use cases:</p>
-<ul>
-<li>Config based weapon / econ items replacements</li>
-<li>Sound and particle replacements</li>
-</ul>
-<h2 id="p_-folders"><strong>P</strong>_ Folders</h2>
-<p>It is impossible to replace an existing asset unless overwritten inside a new <strong>Pak</strong>.
-MIGI supports doing so using those <strong>P</strong>_ folders, which gets its files added to the new additive <strong>Pak</strong>01 when building.  </p>
-<p>Use cases:</p>
-<ul>
-<li>Hardcoded model replacements</li>
-<li>Map Reskins</li>
-<li>Demo / sv_pure 0 oriented replacements</li>
-<li>Whatever <strong>M</strong>_ VPKs can already do</li>
-</ul>
+If that button turns yellow it means your addon is outdated and needs to be rebuilt, if it's green it means it's up-to-date. 
+You should then see a file named the same as your folder but with <code>.vpk</code> at the end.</p>
+<p>You can also create folder named <code>#pak</code> at the root to mimic what a <strong>P_</strong> folder does.<br/>
+Example: <code>m_myaddon/#pak/materials/panorama/images/equipment/ak47.svg</code> which will then be moved to the <strong>Pak</strong>01 on each full build.</p>
 <h4 id="note">Note:</h4>
-<p>While <strong>P</strong>_ folders can seem simply better, they however take longer to build. The more data <strong>P</strong>_ folders will have, 
-the longer it'll take MIGI and VPK.EXE to move those files then compress them in that new <strong>Pak</strong>01. Only use them if you're certain that you cannot use a <strong>M</strong>_ VPK instead.</p>
+<p>Do not use <code>#pak</code> for every single file. Only files that are originally inside CS:GO's <strong>Pak</strong>01 in order to replace them.</p>
+<h2 id="p_-folders"><strong>P</strong>_ Folders</h2>
+<h4 id="recommended-for-personal-use-and-tests"><em>Recommended for personal use and tests</em></h4>
+<p><br/>
+It is impossible to replace an existing asset unless overwritten inside a new <strong>Pak</strong>.
+MIGI supports doing so using those <strong>P</strong>_ folders, which gets their files added to the new additive <strong>Pak</strong>01 when building. This is identical to what the <code>#pak</code> folder does on <strong>M</strong>_ addons except without the whole "extracting from the vpk" stuff.</p>
+<h4 id="note_1">Note:</h4>
+<p>While <strong>P</strong>_ folders can seem simply better, MIGI requires to copy their content <strong>ON EVERY FULL BUILD</strong>, which is also true for the <code>#pak</code> folder inside <strong>M</strong>_ addons. The more data <strong>P</strong>_ folders will have, 
+the longer it'll take MIGI and VPK.EXE to copy those files and compress them in that new <strong>Pak</strong>01. Only use them if you're certain that you need to replace <strong>all</strong> those files and cannot use a <strong>M</strong>_ vpk instead.</p>
               
             </div>
           </div>
