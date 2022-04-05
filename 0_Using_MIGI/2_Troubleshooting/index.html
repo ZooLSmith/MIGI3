@@ -193,7 +193,17 @@
 <h3 id="i-was-using-the-old-migi-tool-should-i-do-something-before-using-migi-3">I was using the old MIGI tool, should I do something before using MIGI 3?</h3>
 <p>Backup your addons and delete the whole MIGI folder just in case, then launch MIGI 3 to rebuild the whole structure</p>
 <h3 id="migi-doesnt-open-nothing-happens">MIGI doesn't open, nothing happens</h3>
-<p>Try updating <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/">EdgeWebView</a> <em>(standalone x64)</em></p>
+<h4 id="solution-1">Solution 1</h4>
+<ul>
+<li>Update <a href="https://developer.microsoft.com/en-us/microsoft-edge/webview2/">EdgeWebView</a> <em>(standalone x64)</em></li>
+<li>Launch migi.exe again</li>
+</ul>
+<h4 id="solution-2">Solution 2</h4>
+<ul>
+<li>Get <a href="https://github.com/ZooLSmith/MIGI3/blob/main/cefpython3.zip?raw=true">cefpython3.zip</a> </li>
+<li>Unzip it inside the newly created ./migi/ folder like so: </li>
+</ul>
+<p><img alt="Where to unzip cefpython3.zip" src="../../img/wherecefpython3.png" /></p>
 <h3 id="im-getting-an-assertion-failed-message-when-csgo-launches">I'm getting an "Assertion Failed" message when CS:GO launches</h3>
 <p>If the message is about <code>econ_item_system.cpp</code> then it's an issue about the <code>items_game</code> given by an addon.<br />
 Either the addon is corrupted, conflicting with another, or simply wasn't made for MIGI.</p>
