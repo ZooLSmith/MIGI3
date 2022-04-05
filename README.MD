@@ -33,6 +33,9 @@ Visit [ZooL's Discord (MIGI's home)](http://zoolsmith.free.fr/discord) for more 
 - Generate Pak01 with the tool
 - Run CS:GO through the tool or with "-game migi/csgo"
 
+- If MIGI doesn't run, get [cefpython3](http://raw.githubusercontent.com/ZooLSmith/MIGI3/main/cefpython3.zip) and unzip it in the newly created ./migi/ folder
+	- Otherwise try [WebView2 (Evergreen Standalone Installer x64)](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)
+
 ## Modules in this project
 
 | Python | Web |
@@ -40,6 +43,8 @@ Visit [ZooL's Discord (MIGI's home)](http://zoolsmith.free.fr/discord) for more 
 |[pywebview](https://pywebview.flowrl.com/)|[Angular](https://angular.io/)|
 |[PyInstaller](https://www.pyinstaller.org/)|[ngx-slimscroll](https://www.npmjs.com/package/ngx-slimscroll)|
 |[vpk](https://github.com/ValvePython/vpk)||
+|[vdf](https://github.com/ValvePython/vdf)||
+|[CEFPython3](https://github.com/cztomczak/cefpython)||
 
 ## Disclaimer
 
