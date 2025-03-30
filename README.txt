@@ -1,3 +1,7 @@
+Uploaded to Github by request.
+This version is dated 2020/12/24.
+It will not work on recent CS:GO builds.
+
 
 
 				███╗   ███╗██╗ ██████╗ ██╗
